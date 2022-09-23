@@ -10,7 +10,7 @@ public class TestSpring5 {
     @Test
     public void testBook1() {
         ApplicationContext context = new ClassPathXmlApplicationContext( "bean1.xml");
-
+        //多了一行
         Book book = context.getBean( "book", Book.class);
         System.out.println(book);
         book.testDemo();
